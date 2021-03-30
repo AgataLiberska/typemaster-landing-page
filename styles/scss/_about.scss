@@ -1,8 +1,14 @@
 .about {
     display: grid;
     grid-template-columns: 34% auto;
-    gap: 1.5rem;
+    gap: 4.5rem 1.5rem;
     margin-bottom: 6.5rem;
+
+    @include breakpoint-up(medium) {
+        padding: 0 $spacing-tablet;
+        gap: 4.5rem 2rem;
+        margin-bottom: 8.875rem;
+    }
 }
 
 .about__img {
@@ -15,21 +21,39 @@
         background-image: url('/assets/mobile/image-phone-and-keyboard.jpg');
         background-color: $darkOrange;
         background-blend-mode: multiply;
+
+        @include breakpoint-up(medium) {
+            background-image: url('/assets/tablet/image-phone-and-keyboard.jpg');
+        }
     }
 
     &.right {
         background-image: url('/assets/mobile/image-glass-and-keyboard.jpg');
+
+        @include breakpoint-up(medium) {
+            background-image: url('/assets/tablet/image-glass-and-keyboard.jpg');
+        }
+    }
+
+    @include breakpoint-up(medium) {
+        transform: translateX(0);
+        height: 42vw;
     }
 }
 
 
 .about__heading {
     grid-column: span 2;
-    margin: 3rem 3.75rem 0;
+    margin: 0 3.75rem;
     font-size: 2rem;
     line-height: 2.25rem;
     text-align: center;
 
+    @include breakpoint-up(medium) {
+        grid-column: 1 / 2;
+        margin: unset;
+        text-align: left;
+    }
 }
 
 .about__copy {
@@ -38,4 +62,12 @@
     font-size: 1rem;
     line-height: 1.625rem;
     text-align: center;
+
+    @include breakpoint-up(medium) {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+        align-self: center;
+        text-align: left;
+        margin: 0 0 0 2.25rem;
+    }
 }
