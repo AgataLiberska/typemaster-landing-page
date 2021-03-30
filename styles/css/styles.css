@@ -203,4 +203,23 @@ h1, h2 {
   font-size: 1rem;
   line-height: 1.625rem;
 }
+
+.footer {
+  padding: 0 1.5rem 3rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+.footer__copyright__typemaster {
+  font-weight: 700;
+  padding-right: 0.5rem;
+}
+
+.footer__copyright__rights {
+  padding-left: 0.5rem;
+}
 /*# sourceMappingURL=styles.css.map */

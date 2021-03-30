@@ -1,0 +1,18 @@
+.footer {
+    padding: 0 $spacing-mobile 3rem;
+    text-align: center;
+}
+
+.footer__copyright {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.footer__copyright__typemaster {
+    font-weight: $bold;
+    padding-right: 0.5rem;
+}
+
+.footer__copyright__rights{
+    padding-left: 0.5rem;
+}
