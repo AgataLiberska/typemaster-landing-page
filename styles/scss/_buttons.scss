@@ -8,6 +8,10 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: all 300ms ease-in-out;
+
+    @include breakpoint-up(medium) {
+        padding: 1rem 1.625rem;
+    }
 }
 
 .btn-grey {

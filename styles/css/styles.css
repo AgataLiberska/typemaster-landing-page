@@ -42,6 +42,12 @@ h1, h2 {
   transition: all 300ms ease-in-out;
 }
 
+@media (min-width: 48rem) {
+  .btn {
+    padding: 1rem 1.625rem;
+  }
+}
+
 .btn-grey {
   background-color: #E8EFF2;
   color: #162541;
