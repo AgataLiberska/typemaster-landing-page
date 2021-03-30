@@ -35,10 +35,10 @@
 }
 
 .hero__image {
-    margin-left: $spacing-mobile;
     height: 88vw;
     width: 100%;
     background-image: url('/assets/mobile/image-keyboard.jpg');
     background-size: cover;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 1.25rem;
+    transform: translateX($spacing-mobile);
 }

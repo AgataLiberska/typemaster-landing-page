@@ -119,11 +119,55 @@ h1, h2 {
 }
 
 .hero__image {
-  margin-left: 1.5rem;
   height: 88vw;
   width: 100%;
   background-image: url("/assets/mobile/image-keyboard.jpg");
   background-size: cover;
-  border-radius: 0.5rem 0 0 0.5rem;
+  border-radius: 1.25rem;
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 34% auto;
+      grid-template-columns: 34% auto;
+  gap: 1.5rem;
+  margin-bottom: 6.5rem;
+}
+
+.about__img {
+  height: 51vw;
+  background-size: cover;
+  border-radius: 1.25rem;
+  -webkit-transform: translateX(-1.5rem);
+          transform: translateX(-1.5rem);
+}
+
+.about__img.left {
+  background-image: url("/assets/mobile/image-phone-and-keyboard.jpg");
+  background-color: #F16718;
+  background-blend-mode: multiply;
+}
+
+.about__img.right {
+  background-image: url("/assets/mobile/image-glass-and-keyboard.jpg");
+}
+
+.about__heading {
+  grid-column: span 2;
+  margin: 3rem 3.75rem 0;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  text-align: center;
+}
+
+.about__copy {
+  grid-column: span 2;
+  margin: 0 1.5rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

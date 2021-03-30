@@ -1,0 +1,41 @@
+.about {
+    display: grid;
+    grid-template-columns: 34% auto;
+    gap: 1.5rem;
+    margin-bottom: 6.5rem;
+}
+
+.about__img {
+    height: 51vw;
+    background-size: cover;
+    border-radius: 1.25rem;
+    transform: translateX(-($spacing-mobile));
+
+    &.left {
+        background-image: url('/assets/mobile/image-phone-and-keyboard.jpg');
+        background-color: $darkOrange;
+        background-blend-mode: multiply;
+    }
+
+    &.right {
+        background-image: url('/assets/mobile/image-glass-and-keyboard.jpg');
+    }
+}
+
+
+.about__heading {
+    grid-column: span 2;
+    margin: 3rem 3.75rem 0;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-align: center;
+
+}
+
+.about__copy {
+    grid-column: span 2;
+    margin: 0 $spacing-mobile;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    text-align: center;
+}
