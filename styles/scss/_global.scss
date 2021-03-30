@@ -13,4 +13,12 @@ body {
     width: 100vw;
     overflow: hidden;
     font-family: $main-font;
+    font-weight: $medium;
+    color: $greyBlue;
+}
+
+h1, h2 {
+    font-weight: $black;
+    text-transform: uppercase;
+    color: $darkBlue;
 }
