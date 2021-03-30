@@ -3,4 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: $spacing-mobile $spacing-mobile 4rem;
+
+    @include breakpoint-up(medium) {
+        padding: $spacing-tablet $spacing-tablet 4rem;
+    }
 }

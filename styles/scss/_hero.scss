@@ -1,10 +1,22 @@
 .hero {
     margin-bottom: 1.5rem;
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2.5rem;
+    }
 }
 
 .hero__copy {
     padding: 0 $spacing-mobile;
     margin-bottom: 4rem;
+
+    @include breakpoint-up(medium) {
+        align-self: center;
+        padding: 0 0 0 $spacing-tablet;
+        margin-bottom: unset;
+    }
 }
 
 .hero__heading {
@@ -41,4 +53,9 @@
     background-size: cover;
     border-radius: 1.25rem;
     transform: translateX($spacing-mobile);
+
+    @include breakpoint-up(medium) {
+        height: 55vw;
+        transform: translateX(4rem);
+    }
 }

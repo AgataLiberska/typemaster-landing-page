@@ -82,13 +82,39 @@ h1, h2 {
   padding: 1.5rem 1.5rem 4rem;
 }
 
+@media (min-width: 48rem) {
+  .header {
+    padding: 2.5rem 2.5rem 4rem;
+  }
+}
+
 .hero {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .hero__copy {
   padding: 0 1.5rem;
   margin-bottom: 4rem;
+}
+
+@media (min-width: 48rem) {
+  .hero__copy {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 0 0 2.5rem;
+    margin-bottom: unset;
+  }
 }
 
 .hero__heading {
@@ -132,6 +158,14 @@ h1, h2 {
   border-radius: 1.25rem;
   -webkit-transform: translateX(1.5rem);
           transform: translateX(1.5rem);
+}
+
+@media (min-width: 48rem) {
+  .hero__image {
+    height: 55vw;
+    -webkit-transform: translateX(4rem);
+            transform: translateX(4rem);
+  }
 }
 
 .about {
