@@ -5,40 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles/css/styles.css">
   
   <title>Frontend Mentor | Typemaster pre-launch landing page</title>
 </head>
 <body>
-  Pre-order now
+  <header class="header">
+    <img src="/assets/shared/logo.svg" alt="Typemaster logo" class="header__logo">
+    <a href="/" class="btn btn-grey">Pre-order now</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__copy">
+        <h1 class="hero__heading js-anim1">Typemaster keyboard</h1>
+        <p class="hero__tagline js-anim1">Improve your productivity and gaming without breaking the bank. Upgrade to a high quality 
+          mechanical typing experience.</p>
+        <div class="hero__cta js-anim1">
+          <a href="/" class="btn btn-orange">Pre-order now</a>
+          <span class="hero__cta__info">Release on 5/27</span>
+        </div>
+      </div>
+      <div class="hero__image">
+        
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__img left">
 
-  Typemaster keyboard
+      </div>
+      <div class="about__img right">
 
-  Improve your productivity and gaming without breaking the bank. Upgrade to a high quality 
-  mechanical typing experience.
-
-  Pre-order now
-  Release on 5/27
-
-  Mechanical wireless keyboard
-  The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety 
-  of switches and keycaps, along with reliable wireless connectivity.
-
-  Highly compatible
-  Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
-  Plug & play, no installation or driver needed.
-
-  Wireless with bluetooth
-  Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. 
-  Simply plug the unifying receiver into your computer.
-
-  High capacity battery
-  Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. 
-  Enjoy 40 hours of usage time between charges.
-
-  RGB backlit modes
-  Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps
-  you type in low light conditions.
-
-  Typemaster 2021 | All Rights Reserved
+      </div>
+      <h1 class="about__heading">
+        Mechanical wireless keyboard
+      </h1>
+      <p class="about__copy">The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches and keycaps, along with reliable wireless connectivity.</p>
+    </section>
+    <section class="features">
+      <div class="features__item">
+        <div class="features__item__icon">
+          <img src="/assets/shared/icon-compatible.svg" alt="">
+        </div>
+        <h2 class="features__item__heading">Highly compatible</h2>
+        <p class="features__item__copy">
+          Easy to use and works well with all major computer brands, gaming consoles and mobile devices. 
+          Plug & play, no installation or driver needed.
+        </p>
+      </div>
+      <div class="features__item">
+        <div class="features__item__icon">
+          <img src="/assets/shared/icon-bluetooth.svg" alt="">
+        </div>
+        <h2 class="features__item__heading">Wireless with bluetooth</h2>
+        <p class="features__item__copy">
+          Powerful 2.4G RF technology allows you to connect the cordless keyboard from up to 30ft away. Simply plug the unifying receiver into your computer.
+        </p>
+      </div>
+      <div class="features__item">
+        <div class="features__item__icon">
+          <img src="/assets/shared/icon-battery.svg" alt="">
+        </div>
+        <h2 class="features__item__heading">High capacity battery</h2>
+        <p class="features__item__copy">
+          Equipped with a long-lasting built-in battery, you’ll never have to spend a dime on replaceable ones. Enjoy 40 hours of usage time between charges.
+        </p>
+      </div>
+      <div class="features__item">
+        <div class="features__item__icon">
+          <img src="/assets/shared/icon-light.svg" alt="">
+        </div>
+        <h2 class="features__item__heading">RGB backlit modes</h2>
+        <p class="features__item__copy">
+          Choose from 4 backlight brightness levels and adjustable breathing speed. Each key glows intensely in the dark and helps you type in low light conditions.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">
+      <span class="footer__copyright__typemaster">Typemaster 2021</span>|<span class="footer__copyright__rights">All Rights Reserved</span>
+    </p>
+  </footer>
 </body>
 </html>

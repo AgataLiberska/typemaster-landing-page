@@ -1,0 +1,112 @@
+.hero {
+    margin-bottom: 1.5rem;
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2.5rem;
+    }
+
+    @include breakpoint-up(desktop) {
+        margin: 0 $spacing-desktop 2rem;
+        gap: 2rem;
+    }
+
+    @include breakpoint-up(large-desktop) {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 50%;
+            right: -18rem;
+            width: 16rem;
+            background-color: $lightGrey;
+            border-radius: 1.25rem;
+        }
+    }
+}
+
+.hero__copy {
+    padding: 0 $spacing-mobile;
+    margin-bottom: 4rem;
+
+    @include breakpoint-up(medium) {
+        align-self: center;
+        padding: 0 0 0 $spacing-tablet;
+        margin-bottom: unset;
+    }
+
+    @include breakpoint-up(desktop) {
+        padding: 0 $spacing-desktop 0 0 ;
+    }
+}
+
+.hero__heading {
+    margin-bottom: 2rem;
+    font-size: 12vw;
+    line-height: 12vw;
+
+    @include breakpoint-up(medium) {
+        font-size: 6.2vw;
+        line-height: 6.2vw;
+    }
+
+    @include breakpoint-up(desktop) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+}
+
+.hero__tagline {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+
+    @include breakpoint-up(desktop) {
+        font-size: 1.125rem;
+    }
+}
+
+.hero__cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__cta__info {
+    display: inline-block;
+    padding: 0.75rem 0.875rem;
+    font-size: 1rem;
+    font-weight: $bold;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+}
+
+.hero__image {
+    height: 88vw;
+    width: 100%;
+    background-image: url('/assets/mobile/image-keyboard.jpg');
+    background-size: cover;
+    border-radius: 1.25rem;
+    transform: translateX($spacing-mobile);
+
+    @include breakpoint-up(medium) {
+        height: 55vw;
+        background-image: url('/assets/tablet/image-keyboard.jpg');
+        transform: translateX(4rem);
+    }
+
+    @include breakpoint-up(desktop) {
+        height: 33.5vw;
+        margin-right: $spacing-desktop;
+        transform: translateX(0);
+    }
+
+    @include breakpoint-up(large-desktop) {
+        background-image: url('/assets/desktop/image-keyboard.jpg');
+    }
+}

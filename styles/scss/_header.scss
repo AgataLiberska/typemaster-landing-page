@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-mobile $spacing-mobile 4rem;
+
+    @include breakpoint-up(medium) {
+        padding: $spacing-tablet $spacing-tablet 4rem;
+    }
+
+    @include breakpoint-up(desktop) {
+        padding: $spacing-desktop $spacing-desktop 5rem;
+    }
+
+    @include breakpoint-up(large-desktop) {
+        max-width: $max-width;
+        margin: auto;
+        padding: $spacing-desktop 0 5rem;
+    }
+}
