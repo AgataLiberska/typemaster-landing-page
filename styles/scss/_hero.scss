@@ -9,6 +9,24 @@
 
     @include breakpoint-up(desktop) {
         margin: 0 $spacing-desktop 2rem;
+        gap: 2rem;
+    }
+
+    @include breakpoint-up(large-desktop) {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto 2rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            height: 50%;
+            right: -18rem;
+            width: 16rem;
+            background-color: $lightGrey;
+            border-radius: 1.25rem;
+        }
     }
 }
 
@@ -47,6 +65,10 @@
     margin-bottom: 2rem;
     font-size: 1rem;
     line-height: 1.625rem;
+
+    @include breakpoint-up(desktop) {
+        font-size: 1.125rem;
+    }
 }
 
 .hero__cta {
@@ -79,9 +101,12 @@
     }
 
     @include breakpoint-up(desktop) {
-        height: 33vw;
+        height: 33.5vw;
         margin-right: $spacing-desktop;
-        
         transform: translateX(0);
+    }
+
+    @include breakpoint-up(large-desktop) {
+        background-image: url('/assets/desktop/image-keyboard.jpg');
     }
 }

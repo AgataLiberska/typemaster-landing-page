@@ -11,4 +11,10 @@
     @include breakpoint-up(desktop) {
         padding: $spacing-desktop $spacing-desktop 5rem;
     }
+
+    @include breakpoint-up(large-desktop) {
+        max-width: $max-width;
+        margin: auto;
+        padding: $spacing-desktop 0 5rem;
+    }
 }

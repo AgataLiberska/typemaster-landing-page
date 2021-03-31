@@ -94,6 +94,14 @@ h1, h2 {
   }
 }
 
+@media (min-width: 90rem) {
+  .header {
+    max-width: 70rem;
+    margin: auto;
+    padding: 5rem 0 5rem;
+  }
+}
+
 .hero {
   margin-bottom: 1.5rem;
 }
@@ -111,6 +119,25 @@ h1, h2 {
 @media (min-width: 80rem) {
   .hero {
     margin: 0 5rem 2rem;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .hero {
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto 2rem;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 50%;
+    right: -18rem;
+    width: 16rem;
+    background-color: #E8EFF2;
+    border-radius: 1.25rem;
   }
 }
 
@@ -161,6 +188,12 @@ h1, h2 {
   line-height: 1.625rem;
 }
 
+@media (min-width: 80rem) {
+  .hero__tagline {
+    font-size: 1.125rem;
+  }
+}
+
 .hero__cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -203,10 +236,16 @@ h1, h2 {
 
 @media (min-width: 80rem) {
   .hero__image {
-    height: 33vw;
+    height: 33.5vw;
     margin-right: 5rem;
     -webkit-transform: translateX(0);
             transform: translateX(0);
+  }
+}
+
+@media (min-width: 90rem) {
+  .hero__image {
+    background-image: url("/assets/desktop/image-keyboard.jpg");
   }
 }
 
@@ -221,9 +260,8 @@ h1, h2 {
 
 @media (min-width: 48rem) {
   .about {
-    padding: 0 2.5rem;
+    margin: 0 2.5rem 8.875rem;
     gap: 4.5rem 2rem;
-    margin-bottom: 8.875rem;
   }
 }
 
@@ -234,8 +272,7 @@ h1, h2 {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     gap: 1.75rem 2rem;
-    padding: 0 5rem;
-    margin-bottom: 10.5rem;
+    margin: 0 5rem 10.5rem;
   }
 }
 
