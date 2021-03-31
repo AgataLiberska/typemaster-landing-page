@@ -6,6 +6,10 @@
         grid-template-columns: 1fr 1fr;
         margin-bottom: 2.5rem;
     }
+
+    @include breakpoint-up(desktop) {
+        margin: 0 $spacing-desktop 2rem;
+    }
 }
 
 .hero__copy {
@@ -17,6 +21,10 @@
         padding: 0 0 0 $spacing-tablet;
         margin-bottom: unset;
     }
+
+    @include breakpoint-up(desktop) {
+        padding: 0 $spacing-desktop 0 0 ;
+    }
 }
 
 .hero__heading {
@@ -27,6 +35,11 @@
     @include breakpoint-up(medium) {
         font-size: 6.2vw;
         line-height: 6.2vw;
+    }
+
+    @include breakpoint-up(desktop) {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
     }
 }
 
@@ -63,5 +76,12 @@
         height: 55vw;
         background-image: url('/assets/tablet/image-keyboard.jpg');
         transform: translateX(4rem);
+    }
+
+    @include breakpoint-up(desktop) {
+        height: 33vw;
+        margin-right: $spacing-desktop;
+        
+        transform: translateX(0);
     }
 }

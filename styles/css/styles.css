@@ -88,6 +88,12 @@ h1, h2 {
   }
 }
 
+@media (min-width: 80rem) {
+  .header {
+    padding: 5rem 5rem 5rem;
+  }
+}
+
 .hero {
   margin-bottom: 1.5rem;
 }
@@ -99,6 +105,12 @@ h1, h2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero {
+    margin: 0 5rem 2rem;
   }
 }
 
@@ -117,6 +129,12 @@ h1, h2 {
   }
 }
 
+@media (min-width: 80rem) {
+  .hero__copy {
+    padding: 0 5rem 0 0;
+  }
+}
+
 .hero__heading {
   margin-bottom: 2rem;
   font-size: 12vw;
@@ -127,6 +145,13 @@ h1, h2 {
   .hero__heading {
     font-size: 6.2vw;
     line-height: 6.2vw;
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero__heading {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
 
@@ -173,6 +198,15 @@ h1, h2 {
     background-image: url("/assets/tablet/image-keyboard.jpg");
     -webkit-transform: translateX(4rem);
             transform: translateX(4rem);
+  }
+}
+
+@media (min-width: 80rem) {
+  .hero__image {
+    height: 33vw;
+    margin-right: 5rem;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 

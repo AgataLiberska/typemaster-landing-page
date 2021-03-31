@@ -7,4 +7,8 @@
     @include breakpoint-up(medium) {
         padding: $spacing-tablet $spacing-tablet 4rem;
     }
+
+    @include breakpoint-up(desktop) {
+        padding: $spacing-desktop $spacing-desktop 5rem;
+    }
 }
