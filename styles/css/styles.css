@@ -163,6 +163,7 @@ h1, h2 {
 @media (min-width: 48rem) {
   .hero__image {
     height: 55vw;
+    background-image: url("/assets/tablet/image-keyboard.jpg");
     -webkit-transform: translateX(4rem);
             transform: translateX(4rem);
   }

@@ -56,6 +56,7 @@
 
     @include breakpoint-up(medium) {
         height: 55vw;
+        background-image: url('/assets/tablet/image-keyboard.jpg');
         transform: translateX(4rem);
     }
 }
