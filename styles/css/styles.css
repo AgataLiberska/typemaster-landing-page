@@ -119,8 +119,15 @@ h1, h2 {
 
 .hero__heading {
   margin-bottom: 2rem;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 12vw;
+  line-height: 12vw;
+}
+
+@media (min-width: 48rem) {
+  .hero__heading {
+    font-size: 6.2vw;
+    line-height: 6.2vw;
+  }
 }
 
 .hero__tagline {
