@@ -15,9 +15,6 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
     - [Continued development](#continued-development)
   - [Author](#author)
 
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### Screenshot
@@ -26,8 +23,8 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- [Vie the live site](https://typemaster-landing-page.vercel.app/)
+- [View the solution on Frontend Mentor](https://www.frontendmentor.io/solutions/css-grid-0Nq-e91YO)
+- [View the live site](https://typemaster-landing-page.vercel.app/)
 
 ## My process
 
