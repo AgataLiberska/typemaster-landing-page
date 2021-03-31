@@ -2,10 +2,23 @@
     margin-bottom: 2rem;
     padding: 0 $spacing-mobile;
     text-align: center;
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4.5rem;
+        margin-bottom: 8.875rem;
+        padding: 0 $spacing-tablet;
+        text-align: left;
+    }
 }
 
 .features__item {
     margin-bottom: 6rem;
+
+    @include breakpoint-up(medium) {
+        margin-bottom: unset;
+    }
 }
 
 .features__item__icon {
@@ -16,6 +29,10 @@
     margin: 0 auto 3rem;
     border-radius: 1rem;
     background-color: $darkOrange;
+
+    @include breakpoint-up(medium) {
+        margin: 0 0 2.5rem;
+    }
 }
 
 .features__item__heading {
@@ -23,6 +40,11 @@
     padding: 0 4rem;
     font-size: 1.5rem;
     line-height: 1.75rem;
+
+    @include breakpoint-up(medium) {
+        max-width: 12.5rem;
+        padding: unset;
+    }
 }
 
 .features__item__copy {

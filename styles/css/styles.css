@@ -271,8 +271,27 @@ h1, h2 {
   text-align: center;
 }
 
+@media (min-width: 48rem) {
+  .features {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
+    margin-bottom: 8.875rem;
+    padding: 0 2.5rem;
+    text-align: left;
+  }
+}
+
 .features__item {
   margin-bottom: 6rem;
+}
+
+@media (min-width: 48rem) {
+  .features__item {
+    margin-bottom: unset;
+  }
 }
 
 .features__item__icon {
@@ -286,11 +305,24 @@ h1, h2 {
   background-color: #F16718;
 }
 
+@media (min-width: 48rem) {
+  .features__item__icon {
+    margin: 0 0 2.5rem;
+  }
+}
+
 .features__item__heading {
   margin-bottom: 1.5rem;
   padding: 0 4rem;
   font-size: 1.5rem;
   line-height: 1.75rem;
+}
+
+@media (min-width: 48rem) {
+  .features__item__heading {
+    max-width: 12.5rem;
+    padding: unset;
+  }
 }
 
 .features__item__copy {
