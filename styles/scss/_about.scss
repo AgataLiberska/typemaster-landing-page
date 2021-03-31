@@ -16,6 +16,22 @@
         margin: 0 $spacing-desktop 10.5rem;
     }
 
+    @include breakpoint-up(large-desktop) {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto 10.5rem;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -18rem;
+            height: 50%;
+            width: 16rem;
+            background-color: $lightGrey;
+            border-radius: 1.25rem;
+        }
+    }
 
 }
 
@@ -57,7 +73,7 @@
     }
 
     @include breakpoint-up(desktop) {
-        height: 33vw;
+        height: 34vw;
         grid-row: span 2;
     }
 }

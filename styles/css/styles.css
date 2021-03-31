@@ -276,6 +276,24 @@ h1, h2 {
   }
 }
 
+@media (min-width: 90rem) {
+  .about {
+    position: relative;
+    max-width: 70rem;
+    margin: 0 auto 10.5rem;
+  }
+  .about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -18rem;
+    height: 50%;
+    width: 16rem;
+    background-color: #E8EFF2;
+    border-radius: 1.25rem;
+  }
+}
+
 .about__img {
   height: 51vw;
   background-size: cover;
@@ -328,7 +346,7 @@ h1, h2 {
 
 @media (min-width: 80rem) {
   .about__img {
-    height: 33vw;
+    height: 34vw;
     grid-row: span 2;
   }
 }
